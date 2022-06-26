@@ -17,4 +17,4 @@ jobs:
         build_configuration: production
         base_href: https://LuizHenriqueT1.github.io/myportfolio/
         deploy_branch: gh-pages
-        angular_dist_build_folder: dist/myportfolio
+        angular_dist_build_folder: dist/portfolio
