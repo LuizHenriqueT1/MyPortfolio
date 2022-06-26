@@ -1,0 +1,29 @@
+<mat-toolbar style="background-color: #29a1b1; color: #fff;">
+    <span class="spacer"> LH</span>
+    <div *ngIf="isHandsetW$ | async">
+        <a id="linkHover" href="" mat-button>Home</a>
+        <a id="linkHover" href="#Projetos" style="text-decoration: none;" mat-button>Projetos</a>
+        <a id="linkHover" href="#Contato" mat-button>Contatos</a>
+    </div>
+    
+    <div class="link-area" *ngIf="isHandset$ | async">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>home</mat-icon>
+                <span href="" mat-button>Home</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>dynamic_feed</mat-icon>
+                <a href="#Projetos" style="text-decoration: none; color: #000"><span>Projetos</span></a>
+
+            </button>
+            <button mat-menu-item>
+                <mat-icon>contacts</mat-icon>
+                <a href="#Contato" style="text-decoration: none; color: #000"> <span>Contatos</span></a>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>

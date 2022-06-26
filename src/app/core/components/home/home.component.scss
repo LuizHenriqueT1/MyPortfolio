@@ -1,0 +1,100 @@
+.body {
+    background-color: #0C1824;
+}
+
+.section {
+    margin-top: 40px;
+    background-color: #58A4B0;
+    justify-content: space-around;
+    border-top: 3px solid #bbdedc;
+    border-bottom: 3px solid #bbdedc;
+    display: flex;
+}
+
+.text-section {
+    padding: 5%;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+}
+
+.container-img {
+    padding: 5%;
+}
+
+.myImg {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 3px #fff;
+}
+
+.myImg:hover {
+    border:  #fff;
+    transition: 0.3s;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 0.5em;
+    // border: solid 2px #0C2944;
+}
+
+.card:hover {
+    box-shadow: inset 0 0 0.5em rgb(106, 108, 109), 0 0 1em rgb(106, 108, 109);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    border-bottom: solid 2px #6b6c6a;
+    object-fit: cover;
+    height: 255px;
+}
+
+.typping {
+    font-family: 'Anton', sans-serif;
+    color: #000;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: solid 3px #A1DD20;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.typping {
+    animation: animated-text 3s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 354px;
+    }
+}
+
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: #314C53;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
